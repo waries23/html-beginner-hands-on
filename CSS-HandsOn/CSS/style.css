@@ -6,9 +6,9 @@ color: black;
 font-family: Arial, Helvetica, sans-serif;
 
 font-size: 12px;
-font-weight: bold;
+font-weight: lighter;
 /*same as above*/
-font: bold 12px Aerial, Helvetica, sans-serif;
+font: lighter 12px Aerial, Helvetica, sans-serif;
 
 line-height: 1.6em;
 margin:5%;
@@ -32,9 +32,25 @@ a:visited{
 
 .container{
 
-    width:auto ; 
+    width:auto; 
     margin:auto;
 }
+/*for applying this button format for all buttons*/
+.button{
+    background-color: darkseagreen;
+    color:darkmagenta;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.button:hover{
+    background-color: coral;
+}
+
+.clr{
+    clear: both;
+}
+
 .box-1
 {
 background-color: #333;
@@ -67,7 +83,7 @@ margin-top: 5%;
 
 .box-2{
     border:3px dotted #ccc;
-    padding: 50px;
+    padding: 30px;
     margin:20px 0;
 }
 
@@ -85,18 +101,19 @@ margin-top: 5%;
 
     padding:0px;
     list-style: square;
+    border:2px solid red;
 }
 
 .categories li{
 
     padding-bottom: 4px;
     border-bottom: dotted 2px #333;
-    margin-left:40%;
+    margin-left:300px;
     list-style-image: url('C:/Users/Lenovo/CSS/CSS-HandsOn/images/download.png'); 
 }
 
 .my-form{
-    margin: auto;
+    margin-top: 10px;
     border:2px dotted #666;
     padding:4px;
     border-radius: 6px;
@@ -110,6 +127,86 @@ margin-top: 5%;
 }
 
 .my-form input[type="text"]{
-padding:3px;
-width:100%;
+padding:5px;
+width:80%;
+}
+
+.my-form textarea {
+        padding:5px;
+        width:80%;
+        }
+/*format forsubmit button
+.my-form input[type="submit"]{
+    background-color: darkseagreen;
+    color:darkmagenta;
+    padding: 5px;
+    border-radius: 7px;
+}*/
+
+.block{
+    float:left;
+    width:33.3%;
+    border:1px solid #666;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float:left;
+    width:70%;
+    padding:2px;
+    box-sizing:border-box;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    background-color: white;
+    padding:2px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width:auto;
+    height:500px;
+    border:1px solid black;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('C:/Users/Lenovo/CSS/CSS-HandsOn/images/sample2.jpeg');
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.p-box h1{
+    position: absolute;
+    top:50px;
+    left:66px
+}
+
+.p-box h2{
+    position: absolute;
+    bottom:50px;
+    right:66px
+}
+
+.fix-me{
+    position: fixed;
+    top:200px;
+}
+
+.my-list li:first-child{
+    background-color: aqua;
+}
+
+.my-list li:last-child{
+    background-color: blue;
+}
+
+.my-list li:nth-child(5){
+    background-color:palevioletred;
+}
+
+.my-list li:nth-child(odd){
+    background-color: crimson;
 }
