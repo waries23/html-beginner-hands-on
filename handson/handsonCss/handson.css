@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    background-color: white;
+    color: black;
+    padding:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow: hidden;
+    }
+
+header{
+    background-color: #136207;
+    color:whitesmoke;
+    min-height: 70px;
+    border-bottom: 4px solid yellowgreen;
+    padding-top: 10px;
+}
+
+header #welcome{
+     float: left;
+}
+
+ nav {
+    float:right;
+    margin-top: 15px;
+}
+
+nav li{
+    float:left;
+    list-style: none;
+    display: inline;
+    padding:0 5px 0 5px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: yellow;
+    font-weight: bold;
+}
+
+#myintroduction{
+    min-height: 150px;
+    background-color: darkolivegreen;
+    color:white;
+}
+
+#myintroduction h1{
+    text-align: center;
+    margin:0%;
+    padding-top: 3px;
+}
+
+#myintroduction .image{
+    float:right;
+    width: 30%;
+    margin-top:25px;
+}
+
+#myintroduction .image img{
+    width:300px;
+    padding-right:50px;
+}
+
+#sign-in{
+    float:left;
+    width:70%;
+    padding-top: 20px;
+    color: #136207;
+    position: absolute;
+}
+
+#sign-in form{
+    text-align: center;
+    border:2px solid lightgreen;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-radius: 10px;
+}
+
+#sign-in input[type="text"], [type="password"]{
+    width:250px;
+    height:25px;
+    padding:5px;
+    border-radius: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+}
+
+#sign-in h2{
+    margin:25px 0 25px 0;
+}
+
+#sign-in input[type="submit"]{
+    width:100px;
+    height:40px;
+    padding:7px;
+    background-color: #136207;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    margin:18px 0 18px 0;
+}
+
+#sign-in .side{
+    float:right;
+    position: relative;
+}
+
+@media(max-width:400px){
+
+    #welcome h1,nav ul,#myintroduction .image, #sign-in form{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    #sign-in input[type="submit"]{
+        width:100px;
+        display:block;
+    }
+}
+
